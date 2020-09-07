@@ -1,7 +1,7 @@
 FROM debian:10.4-slim
 
-ARG VERSION=1.3.2
-ARG SHA256SUM=c55c46906fdc00e1392c537983644cb9982d0cf1b6143f760dcb502d3a3741e0
+ARG VERSION=1.3.3
+ARG SHA256SUM=6e2caa40f95d2372e08c75c37fb1b92a9b710a72e9eb95ce47b34965aa453ff0
 
 RUN apt-get update && apt-get -y install unzip curl && \
     curl https://github.com/denoland/deno/releases/download/v${VERSION}/deno-x86_64-unknown-linux-gnu.zip -L --output /tmp/deno-x86_64-unknown-linux-gnu.zip && \
